@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    --theme-color-rose-800: #7A284E;
+    --theme-color-rose-50: #FFF7FB;
+    --theme-color-stone-900: #312E2C;
+    --theme-color-stone-600: #5F564D;
+    --theme-color-stone-150: #E3DDD7;
+    --theme-color-stone-100: #F3E5D7;
+    --theme-color-brown-800: #854632;
+    --theme-color-white: #854632;
+
+    --theme-font-1: 400 40px/100% 'Young Serif';
+    --theme-font-2: 400 28px/100% 'Young Serif';
+    --theme-font-3: 500 20px/100% 'Outfit';
+    --theme-font-4: 400 16px/150% 'Outfit';
+    --theme-font-4-bold: 600 16px/150% 'Outfit';
+}
+
