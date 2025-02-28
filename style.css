@@ -251,3 +251,7 @@ body {
         border-bottom: 1px solid var(--theme-color-stone-150);
     }
 }
+
+hr {
+    border-top: 1px solid var(--theme-color-stone-150);
+}
