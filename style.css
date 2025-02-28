@@ -22,7 +22,7 @@ html {
     --theme-color-stone-150: #E3DDD7;
     --theme-color-stone-100: #F3E5D7;
     --theme-color-brown-800: #854632;
-    --theme-color-white: #854632;
+    --theme-color-white: #fff;
 
     --theme-font-1: 400 40px/100% 'Young Serif';
     --theme-font-2: 400 28px/100% 'Young Serif';
@@ -31,3 +31,98 @@ html {
     --theme-font-4-bold: 600 16px/150% 'Outfit';
 }
 
+body {
+    background-color: var(--theme-color-stone-100);
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 128px 48px;
+}
+
+.card {
+    background-color: var(--theme-color-white);
+    max-width: 736px;
+    padding: 40px;
+
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+        font: var(--theme-font-1);
+        color: var(--theme-color-stone-900);
+    }
+
+    p {
+        font: var(--theme-font-4);
+        color: var(--theme-color-stone-600);
+    }
+}
+
+.preparation {
+    background-color: var(--theme-color-rose-50);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    h4 {
+        color: var(--theme-color-rose-800);
+        font: var(--theme-font-3);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    li {
+        /* padding-left: 20px; */
+        padding-left: 40px;
+        position: relative;
+        font: var(--theme-font-4);
+        b {
+            font: var(--theme-font-4-bold);
+        }
+    }
+
+    li::before {
+        content:"\2219";
+        font-size: 2.5em;
+        line-height: 0;
+        position: absolute;
+        color: var(--theme-color-rose-800);
+        top:.23em;
+        left: 3px; /* Boundry is -5px we need 8xp from padding border */
+    }
+}
+
+li::marker {
+    margin-right: 0 !important;
+}
