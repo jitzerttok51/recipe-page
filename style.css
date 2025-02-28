@@ -211,4 +211,43 @@ body {
         font: var(--theme-font-4);
         color: var(--theme-color-stone-600);
     }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        
+    }
+
+    td {
+        padding: 6px 0;
+    }
+
+    tr:last-child {
+        td {
+            padding-bottom: 0;
+        }
+        border-bottom: none;
+    }
+
+    tr:first-child {
+        td {
+            padding-top: 0;
+        }
+        border-top: none;
+    }
+
+    tr {
+        td:first-child {
+            padding-left: 32px;
+            font: var(--theme-font-4);
+        }
+        td:last-child {
+            padding-left: 32px;
+            font: var(--theme-font-4-bold);
+            color: var(--theme-color-brown-800);
+        }
+        border-top: 1px solid var(--theme-color-stone-150);
+        border-bottom: 1px solid var(--theme-color-stone-150);
+    }
 }
