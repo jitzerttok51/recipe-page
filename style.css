@@ -255,3 +255,7 @@ body {
 hr {
     border-top: 1px solid var(--theme-color-stone-150);
 }
+
+b {
+    font: var(--theme-font-4-bold)
+}
