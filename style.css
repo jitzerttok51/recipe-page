@@ -123,6 +123,38 @@ body {
     }
 }
 
-li::marker {
-    margin-right: 0 !important;
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+        font: var(--theme-font-2);
+        color: var(--theme-color-brown-800);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    li::before {
+        content:"\2219";
+        font-size: 2.5em;
+        line-height: 0;
+        position: absolute;
+        color: var(--theme-color-rose-800);
+        top:.23em;
+        left: 3px; /* Boundry is -5px we need 8xp from padding border */
+    }
+
+    li {
+        /* padding-left: 20px; */
+        padding-left: 40px;
+        position: relative;
+        font: var(--theme-font-4);
+        color: var(--theme-color-stone-600);
+    }
 }
