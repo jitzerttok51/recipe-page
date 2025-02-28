@@ -158,3 +158,41 @@ body {
         color: var(--theme-color-stone-600);
     }
 }
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+        font: var(--theme-font-2);
+        color: var(--theme-color-brown-800);
+    }
+
+    ol {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        counter-reset: item;
+    }
+
+    li::before {
+        content: counter(item) '.';
+        font: var(--theme-font-4-bold);
+        line-height: 0;
+        position: absolute;
+        color: var(--theme-color-rose-800);
+        top:.6em;
+        left: 6px; /* Boundry is -5px we need 8xp from padding border */
+    }
+
+    li {
+        counter-increment: item;
+        /* padding-left: 20px; */
+        padding-left: 40px;
+        position: relative;
+        font: var(--theme-font-4);
+        color: var(--theme-color-stone-600);
+    }
+}
