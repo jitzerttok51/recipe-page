@@ -58,60 +58,73 @@ body {
     border-radius: 12px;
 }
 
-.card-body {
+.gap-32 {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.card-header {
+.gap-24 {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
 
+.gap-16 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gap-8 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.theme-text {
+    h3 {
+        font: var(--theme-font-2);
+        color: var(--theme-color-brown-800);
+    }
+    
+    p {
+        font: var(--theme-font-4);
+        color: var(--theme-color-stone-600);
+    }
+    
+    b {
+        font: var(--theme-font-4-bold)
+    }
+    
     h2 {
         font: var(--theme-font-1);
         color: var(--theme-color-stone-900);
     }
 
-    p {
-        font: var(--theme-font-4);
-        color: var(--theme-color-stone-600);
-    }
-}
-
-.preparation {
-    background-color: var(--theme-color-rose-50);
-    border-radius: 12px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px;
     h4 {
         color: var(--theme-color-rose-800);
         font: var(--theme-font-3);
     }
 
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+    hr {
+        border-top: 1px solid var(--theme-color-stone-150);
     }
+}
 
+.bullet-list {
+    list-style: none;
     li {
         /* padding-left: 20px; */
         padding-left: 40px;
         position: relative;
         font: var(--theme-font-4);
-        b {
-            font: var(--theme-font-4-bold);
-        }
     }
-
+    
     li::before {
         content:"\2219";
         font-size: 2.0em;
@@ -123,59 +136,9 @@ body {
     }
 }
 
-.ingredients {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    h3 {
-        font: var(--theme-font-2);
-        color: var(--theme-color-brown-800);
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    li::before {
-        content:"\2219";
-        font-size: 2.0em;
-        line-height: 0;
-        position: absolute;
-        color: var(--theme-color-rose-800);
-        top:.28em;
-        left: 3px; /* Boundry is -5px we need 8xp from padding border */
-    }
-
-    li {
-        /* padding-left: 20px; */
-        padding-left: 40px;
-        position: relative;
-        font: var(--theme-font-4);
-        color: var(--theme-color-stone-600);
-    }
-}
-
-.instructions {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    h3 {
-        font: var(--theme-font-2);
-        color: var(--theme-color-brown-800);
-    }
-
-    ol {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        counter-reset: item;
-    }
+.number-list {
+    list-style: none;
+    counter-reset: item;
 
     li::before {
         content: counter(item) '.';
@@ -197,21 +160,13 @@ body {
     }
 }
 
+.preparation {
+    background-color: var(--theme-color-rose-50);
+    border-radius: 12px;
+    padding: 24px;
+}
+
 .nutrition {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    h3 {
-        font: var(--theme-font-2);
-        color: var(--theme-color-brown-800);
-    }
-
-    p {
-        font: var(--theme-font-4);
-        color: var(--theme-color-stone-600);
-    }
-
     table {
         width: 100%;
         table-layout: fixed;
@@ -249,12 +204,4 @@ body {
         border-top: 1px solid var(--theme-color-stone-150);
         border-bottom: 1px solid var(--theme-color-stone-150);
     }
-}
-
-hr {
-    border-top: 1px solid var(--theme-color-stone-150);
-}
-
-b {
-    font: var(--theme-font-4-bold)
 }
