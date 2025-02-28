@@ -183,7 +183,7 @@ body {
         line-height: 0;
         position: absolute;
         color: var(--theme-color-rose-800);
-        top:.6em;
+        top:.8em;
         left: 6px; /* Boundry is -5px we need 8xp from padding border */
     }
 
@@ -192,6 +192,22 @@ body {
         /* padding-left: 20px; */
         padding-left: 40px;
         position: relative;
+        font: var(--theme-font-4);
+        color: var(--theme-color-stone-600);
+    }
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+        font: var(--theme-font-2);
+        color: var(--theme-color-brown-800);
+    }
+
+    p {
         font: var(--theme-font-4);
         color: var(--theme-color-stone-600);
     }
