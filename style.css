@@ -27,8 +27,8 @@ html {
     --theme-font-1: 400 40px/100% 'Young Serif';
     --theme-font-2: 400 28px/100% 'Young Serif';
     --theme-font-3: 500 20px/100% 'Outfit';
-    --theme-font-4: 300 16px/150% 'Outfit';
-    --theme-font-4-bold: 600 16px/150% 'Outfit';
+    --theme-font-4: 400 16px/150% 'Outfit';
+    --theme-font-4-bold: 500 16px/150% 'Outfit';
 }
 
 body {
@@ -243,7 +243,6 @@ body {
             font: var(--theme-font-4);
         }
         td:last-child {
-            padding-left: 32px;
             font: var(--theme-font-4-bold);
             color: var(--theme-color-brown-800);
         }
